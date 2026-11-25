@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d347a758d35742e49c1b74daec90ee50, type: 3}
+  m_Name: test_BulletHit_Wall
+  m_EditorClassIdentifier: 
+  shakeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.009312194
+      value: 0.45082015
+      inSlope: -0.32533827
+      outSlope: -0.32533827
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.3142246
+    - serializedVersion: 3
+      time: 0.1523359
+      value: 0.12989292
+      inSlope: -0.84883
+      outSlope: -0.84883
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.063166216
+    - serializedVersion: 3
+      time: 0.64247996
+      value: 0.026396364
+      inSlope: -0.2432516
+      outSlope: -0.2432516
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.0982194
+      outWeight: 0.3072383
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.0125339115
+      outSlope: -0.0125339115
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06415583
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

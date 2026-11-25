@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee52ae2de9a5b774eb6d551f9027ca43, type: 3}
+  m_Name: gamePlayer_Data
+  m_EditorClassIdentifier: 
+  move_MaxSpeed: 20
+  move_Accelerate: 2.5
+  idle_Resistance: 1
+  obj_DirObj_MaxSize: 5
+  shoot_BulletSpeed: 500
+  shoot_ButtleMass: 0.05
+  shoot_IntervalTime: 0.4
+  game_ComboReward_Switch: 1
+  "game_ComboReward_\u8FDE\u51FB\u6301\u7EED\u65F6\u957F": 5
+  "game_ComboReward_\u547D\u4E2D\u8FDE\u51FB\u76EE\u6807\u6062\u590D\u6301\u7EED\u65F6\u957F": 0.5
+  "game_ComboReward_\u672A\u51FB\u4E2D\u4EFB\u4F55\u6709\u6548\u76EE\u6807\u6253\u65AD\u8FDE\u51FB": 1
+  "game_ComboReward_\u4F18\u5148\u51FB\u4E2D\u5176\u4ED6\u76EE\u6807\u6253\u65AD\u8FDE\u51FB": 0
+  "game_ComboReward_\u51FB\u4E2D\u4EFB\u4F55\u6709\u6548\u76EE\u6807\u4E0D\u6253\u65AD\u8FDE\u51FB": 1
