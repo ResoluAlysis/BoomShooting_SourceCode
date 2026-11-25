@@ -686,12 +686,15 @@ P_s = N_s * (Mv_last,s + Mr_last,s - 1)
 
 对应类：`test_CameraController`。
 
+可输入冲量大小与方向、震动强度、持续时间以实现指定方向偏移镜头+震动的效果（计时结束后缓动渐变回原点）
+自定义曲线用于设计不同情况下的震感...
+
 主要结构：
 
-- `_VirtualCamera_常规`：默认状态虚拟相机。
-- `_VirtualCamera_震动`：震动状态虚拟相机。
-- `_shakeData`：按震动名称索引的 `CameraShakeData` 字典。
-- `_baseFollowPos`：相机跟随目标基准位置。当前项目以世界中心 `(0, 0)` 为中心构图，未额外赋值时默认就是 `(0, 0)`。
+- `_VirtualCamera_常规`：默认状态虚拟相机
+- `_VirtualCamera_震动`：震动状态虚拟相机
+- `_shakeData`：按震动名称索引的 `CameraShakeData` 字典
+- `_baseFollowPos`：相机基准位置
 
 主要方法：
 
@@ -699,8 +702,8 @@ P_s = N_s * (Mv_last,s + Mr_last,s - 1)
 |---|---|
 | `Awake()` / `Init()` | 初始化相机引用、震动数据字典和虚拟相机状态 |
 | `Action_CameraShake_BulletHit(string, GameObject, Vector2, Vector2)` | 根据震动名称启动或切换震动 |
-| `_CameraShake_BulletHit()` | 协程，按曲线计算跟随目标偏移 |
-| `Action_UpdateFollowObj_Pos(Vector2)` | 更新下一帧跟随位置 |
+| `_CameraShake_BulletHit()` | 协程，按曲线计算冲量偏移 |
+| `Action_UpdateFollowObj_Pos(Vector2)` | 更新下一帧位置 |
 
 震动时长：
 
